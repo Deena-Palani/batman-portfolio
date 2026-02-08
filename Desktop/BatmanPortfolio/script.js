@@ -1809,3 +1809,26 @@ export {
     animationState,
     elements
 };
+// Mobile menu toggle
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileNav = document.createElement('div');
+mobileNav.className = 'mobile-nav';
+
+// Copy nav links to mobile menu
+document.querySelectorAll('.nav-link').forEach(link => {
+    const mobileLink = link.cloneNode(true);
+    mobileNav.appendChild(mobileLink);
+});
+
+document.body.appendChild(mobileNav);
+
+mobileMenuBtn?.addEventListener('click', () => {
+    mobileNav.classList.toggle('active');
+});
+
+// Close mobile menu when clicking a link
+mobileNav.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A') {
+        mobileNav.classList.remove('active');
+    }
+});
