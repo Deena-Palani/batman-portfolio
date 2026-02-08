@@ -1,0 +1,2215 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-theme">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deena Palani | Hacker-FullStack Developer | Gotham's Digital Knight</title>
+    
+    <!-- Meta Tags for SEO & Professionalism -->
+    <meta name="description" content="Deena Palani - Java Full Stack Developer with hacker ethos and Batman-inspired precision. Building digital fortresses in the shadows of Gotham's code.">
+    <meta name="keywords" content="Java Full Stack Developer, Spring Boot, React, Hacker Portfolio, Batman Theme, Gotham Developer">
+    <meta name="author" content="Deena Palani">
+    <meta property="og:title" content="Deena Palani - Gotham's Digital Knight">
+    <meta property="og:description" content="When the city needs a digital savior, I answer the bat-signal in the sky of code.">
+    
+    <!-- Favicon with Bat Symbol -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦇</text></svg>">
+    
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&family=JetBrains+Mono:wght@300;400;500;600;700&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    
+    <!-- Dynamic Theme Color -->
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="terminal.css">
+    <link rel="stylesheet" href="neon-effects.css">
+    <link rel="stylesheet" href="batman-elements.css">
+    <link rel="stylesheet" href="matrix-rain.css">
+    <link rel="stylesheet" href="hacker-interface.css">
+    <link rel="stylesheet" href="cyberpunk-ui.css">
+    <link rel="stylesheet" href="gotham-city.css">
+    <link rel="stylesheet" href="dark-knight.css">
+    <link rel="stylesheet" href="neon-grid.css">
+    <link rel="stylesheet" href="scroll-effects.css">
+    <link rel="stylesheet" href="particle-system.css">
+    <link rel="stylesheet" href="code-terminal.css">
+    <link rel="stylesheet" href="bat-signal.css">
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    
+    <!-- Audio Files Preload -->
+    <audio preload="auto" id="ambient-sound">
+        <source src="data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4Ljc2LjEwMAAAAAAAAAAAAAAA//tQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAACcAICAgIDAwMDAwQEBAQFBQUFBgYGBgcHBwcICAgICQkJCQoKCgoLCwsLDAwMDA0NDQ0ODg4ODw8PDxAQEBAREREREhISEhMTExMUFBQUFRUVFRYWFhYXFxcXGBgYGBkZGRkaGhobGxsbHBwcHB0dHR0eHh4eHx8fHyAgICAhISEhIiIiIiMjIyMkJCQkJSUlJSYmJiYnJycnKCgoKCkpKSkqKioqKysrKywsLCwtLS0tLi4uLi8vLy8wMDAwMTExMTIyMjIzMzMzNDQ0NDU1NTU2NjY2Nzc3Nzg4ODg5OTk5Ojo6Ojs7Ozs8PDw8PT09PT4+Pj4/Pz8/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//sQZAAP8AAAaQAAAAgAAA0gAAABAAABpAAAACAAADSAAAAETEFNRTMuMTAwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq" type="audio/mpeg">
+    </audio>
+    
+    <style>
+        /* Critical Above-the-Fold CSS */
+        :root {
+            --batman-black: #000000;
+            --gotham-dark: #0a0a0f;
+            --neon-blue: #00f3ff;
+            --neon-purple: #9d00ff;
+            --neon-green: #00ff41;
+            --neon-cyan: #00fff7;
+            --neon-red: #ff003c;
+            --hacker-green: #00ff9d;
+            --matrix-green: #0aff0a;
+            --terminal-green: #39ff14;
+            --bat-yellow: #f0e800;
+            --cyberpunk-pink: #ff00ff;
+            --gotham-fog: #1a1a2e;
+            --bat-signal-yellow: #fff200;
+            --joker-purple: #8a2be2;
+            --robin-red: #ff2400;
+            --catwoman-purple: #9370db;
+            --nightwing-blue: #4169e1;
+            --gordon-brown: #8b4513;
+            --gotham-concrete: #2c2c2c;
+            --wayne-gray: #363636;
+            --arkham-green: #004d00;
+            --ace-blue: #1e90ff;
+            --batcave-dark: #050510;
+            --gotham-rain: #2a2a3e;
+            --neon-glow-blue: 0 0 20px var(--neon-blue), 0 0 40px var(--neon-blue), 0 0 60px var(--neon-blue);
+            --neon-glow-green: 0 0 20px var(--neon-green), 0 0 40px var(--neon-green), 0 0 60px var(--neon-green);
+            --neon-glow-purple: 0 0 20px var(--neon-purple), 0 0 40px var(--neon-purple), 0 0 60px var(--neon-purple);
+            --text-glow: 0 0 10px currentColor;
+            --bat-shadow: 0 0 30px rgba(0, 243, 255, 0.3);
+        }
+        
+        /* Initial Loading Screen */
+        #loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--batman-black);
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Share Tech Mono', monospace;
+        }
+        
+        .loading-bat {
+            width: 100px;
+            height: 100px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50,15 C30,15 15,30 15,50 C15,70 30,85 50,85 C70,85 85,70 85,50 C85,30 70,15 50,15 Z M50,20 C67,20 80,33 80,50 C80,67 67,80 50,80 C33,80 20,67 20,50 C20,33 33,20 50,20 Z M45,35 L45,65 L55,65 L55,35 Z M35,45 L35,55 L65,55 L65,45 Z' fill='%2300ff41'/%3E%3C/svg%3E") no-repeat center;
+            animation: bat-flap 1s infinite alternate;
+        }
+        
+        @keyframes bat-flap {
+            0% { transform: translateY(0) rotate(0deg); }
+            100% { transform: translateY(-20px) rotate(5deg); }
+        }
+    </style>
+</head>
+<body class="hacker-batman-theme">
+    
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-bat"></div>
+        <div class="loading-text" style="color: var(--neon-green); margin-top: 30px; font-size: 1.2rem;">
+            INITIALIZING HACKER PROTOCOLS... <span class="blink">█</span>
+        </div>
+        <div class="progress-bar" style="width: 300px; height: 4px; background: var(--gotham-dark); margin-top: 20px; overflow: hidden;">
+            <div class="progress-fill" style="width: 0%; height: 100%; background: var(--neon-green);"></div>
+        </div>
+    </div>
+    
+    <!-- Matrix Rain Background Canvas -->
+    <canvas id="matrix-rain"></canvas>
+    
+    <!-- Particle System -->
+    <div id="particles-js"></div>
+    
+    <!-- Gotham Skyline Silhouette -->
+    <div class="gotham-skyline"></div>
+    
+    <!-- Bat Signal Projection -->
+    <div class="bat-signal">
+        <div class="signal-light"></div>
+        <div class="signal-beam"></div>
+        <div class="bat-symbol"></div>
+    </div>
+    
+    <!-- Main Terminal Interface -->
+    <div class="terminal-overlay"></div>
+    
+    <!-- Navigation - Batcomputer Style -->
+    <nav class="cyber-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="bat-logo">
+                    <i class="fas fa-bat"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-glitch" data-text="DARK_KNIGHT_DEV">DARK_KNIGHT_DEV</span>
+                    <div class="logo-subtitle">// GOTHAM'S DIGITAL PROTECTOR</div>
+                </div>
+            </div>
+            
+            <div class="nav-terminal">
+                <div class="terminal-display">
+                    <span class="terminal-prompt">root@gotham:~$</span>
+                    <span class="terminal-command">navigate --to-section</span>
+                    <span class="terminal-cursor">█</span>
+                </div>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link neon-underline">
+                        <span class="nav-icon"><i class="fas fa-terminal"></i></span>
+                        <span class="nav-text">HOME.SYS</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link neon-underline">
+                        <span class="nav-icon"><i class="fas fa-user-secret"></i></span>
+                        <span class="nav-text">ABOUT.DAT</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link neon-underline">
+                        <span class="nav-icon"><i class="fas fa-code"></i></span>
+                        <span class="nav-text">SKILLS.EXE</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link neon-underline">
+                        <span class="nav-icon"><i class="fas fa-project-diagram"></i></span>
+                        <span class="nav-text">PROJECTS.DIR</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link neon-underline">
+                        <span class="nav-icon"><i class="fas fa-timeline"></i></span>
+                        <span class="nav-text">TIMELINE.LOG</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link neon-underline">
+                        <span class="nav-icon"><i class="fas fa-satellite-dish"></i></span>
+                        <span class="nav-text">CONTACT.COM</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <button id="hack-mode" class="nav-btn">
+                        <span class="btn-glitch" data-text="ACTIVATE_HACK">ACTIVATE_HACK</span>
+                    </button>
+                </li>
+            </ul>
+            
+            <div class="nav-controls">
+                <button class="control-btn" id="music-toggle" title="Ambient Sound">
+                    <i class="fas fa-music"></i>
+                </button>
+                <button class="control-btn" id="matrix-toggle" title="Matrix Rain">
+                    <i class="fas fa-keyboard"></i>
+                </button>
+                <button class="control-btn" id="theme-toggle" title="Switch Theme">
+                    <i class="fas fa-palette"></i>
+                </button>
+                <button class="control-btn" id="fullscreen-toggle" title="Full Screen">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="nav-status-bar">
+            <div class="status-item">
+                <span class="status-label">SYSTEM_STATUS:</span>
+                <span class="status-value online">OPERATIONAL</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">USER:</span>
+                <span class="status-value">DEENA_PALANI</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">LOCATION:</span>
+                <span class="status-value">GOTHAM_DIGITAL</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">TIME:</span>
+                <span class="status-value" id="live-time">00:00:00</span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content Container -->
+    <main class="cyber-container">
+        
+        <!-- Section 1: Hero - Batcave Entrance -->
+        <section id="home" class="hero-section batcave-entrance">
+            <div class="cyber-grid">
+                <div class="hero-terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="terminal-btn close"></span>
+                            <span class="terminal-btn minimize"></span>
+                            <span class="terminal-btn maximize"></span>
+                        </div>
+                        <div class="terminal-title">BATCOMPUTER_ACCESS_PROTOCOL</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="prompt">root@batcave:~$</span>
+                            <span class="command">whoami</span>
+                        </div>
+                        <div class="terminal-line typewriter" data-text="Deena Palani | Java Full Stack Developer | Gotham's Digital Knight">
+                            <span class="output"></span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="prompt">root@batcave:~$</span>
+                            <span class="command">status --mission</span>
+                        </div>
+                        <div class="terminal-line typewriter" data-text="ACTIVE: Protecting Gotham's digital infrastructure, one line of code at a time. Building impenetrable systems with Java, Spring Boot, and cutting-edge frameworks.">
+                            <span class="output"></span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="prompt">root@batcave:~$</span>
+                            <span class="command">skills --show</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="output">
+                                <span class="skill-tag neon-tag">JAVA</span>
+                                <span class="skill-tag neon-tag">SPRING_BOOT</span>
+                                <span class="skill-tag neon-tag">REACT.JS</span>
+                                <span class="skill-tag neon-tag">POSTGRESQL</span>
+                                <span class="skill-tag neon-tag">DOCKER</span>
+                                <span class="skill-tag neon-tag">MICROSERVICES</span>
+                            </span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="prompt">root@batcave:~$</span>
+                            <span class="command cursor-blink">█</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-display">
+                    <div class="hologram-container">
+                        <div class="hologram-card">
+                            <div class="hologram-avatar">
+                                <div class="avatar-glitch"></div>
+                                <div class="avatar-main">
+                                    <div class="bat-mask"></div>
+                                    <div class="hacker-hood"></div>
+                                </div>
+                            </div>
+                            <div class="hologram-info">
+                                <h1 class="hologram-title">
+                                    <span class="title-glitch" data-text="DEENA PALANI">DEENA PALANI</span>
+                                </h1>
+                                <h2 class="hologram-subtitle">
+                                    <span class="subtitle-neon">JAVA FULL STACK DEVELOPER</span>
+                                </h2>
+                                <p class="hologram-desc">
+                                    When the city needs a digital savior, I answer the bat-signal in the sky of code. 
+                                    Building bulletproof applications with the precision of Batman and the ingenuity of a hacker.
+                                </p>
+                                <div class="hologram-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value">40%</div>
+                                        <div class="stat-label">SYSTEM EFFICIENCY BOOST</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">25%</div>
+                                        <div class="stat-label">USER ENGAGEMENT INCREASE</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">100%</div>
+                                        <div class="stat-label">CODE COVERAGE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-actions">
+                <button class="cyber-btn primary-btn">
+                    <span class="btn-inner">
+                        <span class="btn-text">ACCESS BATCOMPUTER</span>
+                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                    </span>
+                    <span class="btn-glow"></span>
+                </button>
+                <button class="cyber-btn secondary-btn">
+                    <span class="btn-inner">
+                        <span class="btn-text">DOWNLOAD PROFILE</span>
+                        <span class="btn-icon"><i class="fas fa-download"></i></span>
+                    </span>
+                </button>
+                <button class="cyber-btn danger-btn" id="easter-egg-btn">
+                    <span class="btn-inner">
+                        <span class="btn-text">ACTIVATE EASTER EGG</span>
+                        <span class="btn-icon"><i class="fas fa-egg"></i></span>
+                    </span>
+                </button>
+            </div>
+            
+            <div class="hero-scroll-indicator">
+                <div class="scroll-text">SCROLL TO DECRYPT</div>
+                <div class="scroll-line">
+                    <div class="scroll-dot"></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 2: About - Digital Identity -->
+        <section id="about" class="about-section identity-matrix">
+            <div class="section-header">
+                <div class="section-title">
+                    <h2 class="title-glitch" data-text="DIGITAL_IDENTITY">DIGITAL_IDENTITY</h2>
+                    <div class="title-sub">// PROFILE_DECRYPTION_IN_PROGRESS</div>
+                </div>
+                <div class="section-ornament">
+                    <div class="bat-ornament"></div>
+                </div>
+            </div>
+            
+            <div class="cyber-grid about-grid">
+                <div class="about-card profile-card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="fas fa-user-secret"></i>
+                            <span>ENCRYPTED_PROFILE</span>
+                        </h3>
+                        <div class="card-status">
+                            <span class="status-dot online"></span>
+                            <span>ACTIVE</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="profile-info">
+                            <div class="info-row">
+                                <span class="info-label">NAME:</span>
+                                <span class="info-value">DEENA PALANI</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">TITLE:</span>
+                                <span class="info-value neon-text">JAVA FULL STACK DEVELOPER</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">LOCATION:</span>
+                                <span class="info-value">GOTHAM DIGITAL FRONTIER</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">MISSION:</span>
+                                <span class="info-value">PROTECT DIGITAL INFRASTRUCTURE</span>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-bio">
+                            <h4 class="bio-title">// BIOGRAPHY_DECRYPT</h4>
+                            <p class="bio-text">
+                                Passionate Java Full Stack Developer with expertise in Spring Boot, React.js, PostgreSQL, and Docker. 
+                                Built high-performance microservices improving system efficiency by <span class="neon-highlight">40%</span> 
+                                and user engagement by <span class="neon-highlight">25%</span>. 
+                                Operating in the shadows of Gotham's digital underworld to deliver justice through code.
+                            </p>
+                            <p class="bio-text">
+                                Proficient in complete development lifecycle using Agile/Scrum methodologies. 
+                                Skilled in Java, REST APIs, CI/CD pipelines, and modern JavaScript frameworks. 
+                                Eager to contribute technical expertise and collaborative problem-solving to deliver 
+                                impactful software solutions that would make even Lucius Fox proud.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="encryption-status">
+                            <div class="encryption-bar">
+                                <div class="encryption-progress" style="width: 87%;"></div>
+                            </div>
+                            <span class="encryption-text">PROFILE_DECRYPTION: 87%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-card education-card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>EDUCATION_MATRIX</span>
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="timeline-vertical">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2023 - 2025</div>
+                                <div class="timeline-content">
+                                    <h4 class="timeline-title">MASTER OF COMPUTER APPLICATIONS</h4>
+                                    <div class="timeline-subtitle">JAVA UNIVERSITY</div>
+                                    <div class="timeline-desc">
+                                        Specialized in Advanced Java Architectures, Cyber Security Protocols, 
+                                        and Distributed Systems. GPA: <span class="neon-text">9.1/10</span>
+                                    </div>
+                                    <div class="timeline-tags">
+                                        <span class="timeline-tag">JAVA_MASTERY</span>
+                                        <span class="timeline-tag">SYSTEM_DESIGN</span>
+                                        <span class="timeline-tag">CYBER_SECURITY</span>
+                                    </div>
+                                </div>
+                                <div class="timeline-icon">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-date">2018 - 2021</div>
+                                <div class="timeline-content">
+                                    <h4 class="timeline-title">BACHELOR OF COMMERCE</h4>
+                                    <div class="timeline-subtitle">SRM UNIVERSITY</div>
+                                    <div class="timeline-desc">
+                                        Combined business acumen with technical prowess. GPA: <span class="neon-text">8.8/10</span>
+                                    </div>
+                                    <div class="timeline-tags">
+                                        <span class="timeline-tag">BUSINESS_LOGIC</span>
+                                        <span class="timeline-tag">STRATEGIC_THINKING</span>
+                                        <span class="timeline-tag">ANALYTICS</span>
+                                    </div>
+                                </div>
+                                <div class="timeline-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-card languages-card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="fas fa-language"></i>
+                            <span>LINGUISTIC_PROTOCOLS</span>
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="language-grid">
+                            <div class="language-item">
+                                <div class="language-name">ENGLISH</div>
+                                <div class="language-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill fluent"></div>
+                                    </div>
+                                    <span class="level-text">FLUENT</span>
+                                </div>
+                            </div>
+                            <div class="language-item">
+                                <div class="language-name">TAMIL</div>
+                                <div class="language-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill fluent"></div>
+                                    </div>
+                                    <span class="level-text">NATIVE</span>
+                                </div>
+                            </div>
+                            <div class="language-item">
+                                <div class="language-name">HINDI</div>
+                                <div class="language-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill intermediate"></div>
+                                    </div>
+                                    <span class="level-text">INTERMEDIATE</span>
+                                </div>
+                            </div>
+                            <div class="language-item">
+                                <div class="language-name">TELUGU</div>
+                                <div class="language-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill basic"></div>
+                                    </div>
+                                    <span class="level-text">BASIC</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="language-note">
+                            <i class="fas fa-info-circle"></i>
+                            All languages compatible with technical documentation and code review protocols.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-quote">
+                <div class="quote-container">
+                    <div class="quote-icon">"</div>
+                    <div class="quote-text">
+                        It's not who I am underneath, but what I do that defines me. In code, as in life, 
+                        every function serves a purpose, every line has meaning, and every commit brings us 
+                        closer to a safer digital Gotham.
+                    </div>
+                    <div class="quote-author">- DIGITAL KNIGHT'S CREED</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 3: Skills - Tech Arsenal -->
+        <section id="skills" class="skills-section tech-arsenal">
+            <div class="section-header">
+                <div class="section-title">
+                    <h2 class="title-glitch" data-text="TECH_ARSENAL">TECH_ARSENAL</h2>
+                    <div class="title-sub">// WEAPONS_OF_CODE_DESTRUCTION</div>
+                </div>
+                <div class="section-ornament">
+                    <div class="code-ornament"></div>
+                </div>
+            </div>
+            
+            <div class="arsenal-container">
+                <!-- Backend Skills -->
+                <div class="arsenal-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-server"></i>
+                        <span>BACKEND_WEAPONS</span>
+                    </h3>
+                    <div class="skill-grid">
+                        <div class="skill-item" data-skill="95">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fab fa-java"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">JAVA</h4>
+                                    <div class="skill-level">
+                                        <div class="level-dots">
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot"></span>
+                                        </div>
+                                        <span class="level-text">EXPERT</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%;">
+                                    <div class="progress-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-desc">
+                                Core Java, Collections, Multithreading, Stream API, JVM Optimization
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="90">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">SPRING BOOT</h4>
+                                    <div class="skill-level">
+                                        <div class="level-dots">
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot"></span>
+                                        </div>
+                                        <span class="level-text">ADVANCED</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%;">
+                                    <div class="progress-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-desc">
+                                Microservices, REST APIs, Spring Security, Spring Data, Spring Cloud
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">HIBERNATE</h4>
+                                    <div class="skill-level">
+                                        <div class="level-dots">
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                        </div>
+                                        <span class="level-text">ADVANCED</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;">
+                                    <div class="progress-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-desc">
+                                ORM, JPA, Entity Management, Query Optimization, Cache Strategies
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="92">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">REST API</h4>
+                                    <div class="skill-level">
+                                        <div class="level-dots">
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot"></span>
+                                        </div>
+                                        <span class="level-text">EXPERT</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%;">
+                                    <div class="progress-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-desc">
+                                Design, Development, Documentation, Security, Performance Optimization
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Frontend Skills -->
+                <div class="arsenal-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-desktop"></i>
+                        <span>FRONTEND_ARMORY</span>
+                    </h3>
+                    <div class="skill-grid">
+                        <div class="skill-item" data-skill="88">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">HTML5</h4>
+                                    <div class="skill-level">
+                                        <div class="level-dots">
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot"></span>
+                                        </div>
+                                        <span class="level-text">ADVANCED</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%;">
+                                    <div class="progress-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-desc">
+                                Semantic HTML, Accessibility, SEO Optimization, Modern Standards
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">CSS3</h4>
+                                    <div class="skill-level">
+                                        <div class="level-dots">
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot"></span>
+                                        </div>
+                                        <span class="level-text">ADVANCED</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;">
+                                    <div class="progress-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-desc">
+                                Flexbox, Grid, Animations, Responsive Design, CSS Variables
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="87">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">JAVASCRIPT</h4>
+                                    <div class="skill-level">
+                                        <div class="level-dots">
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot"></span>
+                                        </div>
+                                        <span class="level-text">ADVANCED</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 87%;">
+                                    <div class="progress-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-desc">
+                                ES6+, DOM Manipulation, Async Programming, APIs, Modern Patterns
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="82">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">REACT.JS</h4>
+                                    <div class="skill-level">
+                                        <div class="level-dots">
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                        </div>
+                                        <span class="level-text">ADVANCED</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%;">
+                                    <div class="progress-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-desc">
+                                Components, Hooks, State Management, Context API, Performance
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="80">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fab fa-angular"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">ANGULAR</h4>
+                                    <div class="skill-level">
+                                        <div class="level-dots">
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                        </div>
+                                        <span class="level-text">INTERMEDIATE</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;">
+                                    <div class="progress-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-desc">
+                                Components, Services, Routing, RxJS, TypeScript Integration
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Database & DevOps -->
+                <div class="arsenal-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-network-wired"></i>
+                        <span>DATABASE_&_DEVOPS</span>
+                    </h3>
+                    <div class="skill-grid">
+                        <div class="skill-item" data-skill="90">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">MYSQL</h4>
+                                    <div class="skill-level">
+                                        <div class="level-dots">
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot"></span>
+                                        </div>
+                                        <span class="level-text">ADVANCED</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%;">
+                                    <div class="progress-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-desc">
+                                Database Design, Optimization, Transactions, Stored Procedures
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="88">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">POSTGRESQL</h4>
+                                    <div class="skill-level">
+                                        <div class="level-dots">
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot"></span>
+                                        </div>
+                                        <span class="level-text">ADVANCED</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%;">
+                                    <div class="progress-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-desc">
+                                Advanced Queries, JSONB, Full-Text Search, Partitioning
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="83">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">MONGODB</h4>
+                                    <div class="skill-level">
+                                        <div class="level-dots">
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                        </div>
+                                        <span class="level-text">INTERMEDIATE</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 83%;">
+                                    <div class="progress-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-desc">
+                                Document Design, Aggregation Pipeline, Indexing, Replication
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fab fa-docker"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">DOCKER</h4>
+                                    <div class="skill-level">
+                                        <div class="level-dots">
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot"></span>
+                                        </div>
+                                        <span class="level-text">ADVANCED</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;">
+                                    <div class="progress-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-desc">
+                                Containerization, Docker Compose, Image Optimization, Networking
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="82">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fas fa-code-branch"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">GIT</h4>
+                                    <div class="skill-level">
+                                        <div class="level-dots">
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot"></span>
+                                        </div>
+                                        <span class="level-text">ADVANCED</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%;">
+                                    <div class="progress-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-desc">
+                                Version Control, Branching Strategies, Git Flow, Collaboration
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="80">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">CI/CD</h4>
+                                    <div class="skill-level">
+                                        <div class="level-dots">
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                        </div>
+                                        <span class="level-text">INTERMEDIATE</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;">
+                                    <div class="progress-glow"></div>
+                                </div>
+                            </div>
+                            <div class="skill-desc">
+                                Jenkins, GitHub Actions, Automated Testing, Deployment Pipelines
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Methodologies -->
+                <div class="arsenal-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>METHODOLOGIES</span>
+                    </h3>
+                    <div class="methodology-grid">
+                        <div class="methodology-item">
+                            <div class="methodology-icon">
+                                <i class="fas fa-running"></i>
+                            </div>
+                            <h4 class="methodology-name">AGILE</h4>
+                            <p class="methodology-desc">
+                                Sprint Planning, Daily Standups, Iterative Development, Retrospectives
+                            </p>
+                        </div>
+                        
+                        <div class="methodology-item">
+                            <div class="methodology-icon">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <h4 class="methodology-name">SCRUM</h4>
+                            <p class="methodology-desc">
+                                Product Backlog, Sprint Backlog, Scrum Ceremonies, Velocity Tracking
+                            </p>
+                        </div>
+                        
+                        <div class="methodology-item">
+                            <div class="methodology-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4 class="methodology-name">PROBLEM SOLVING</h4>
+                            <p class="methodology-desc">
+                                Analytical Thinking, Debugging, Algorithm Design, System Architecture
+                            </p>
+                        </div>
+                        
+                        <div class="methodology-item">
+                            <div class="methodology-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h4 class="methodology-name">COMMUNICATION</h4>
+                            <p class="methodology-desc">
+                                Technical Documentation, Team Collaboration, Client Interaction, Mentoring
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="arsenal-stats">
+                <div class="stat-card">
+                    <div class="stat-value" data-count="15">0</div>
+                    <div class="stat-label">TECHNOLOGIES MASTERED</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" data-count="95">0</div>
+                    <div class="stat-label">AVERAGE SKILL LEVEL %</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" data-count="1000">0</div>
+                    <div class="stat-label">HOURS OF PRACTICE</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" data-count="50">0</div>
+                    <div class="stat-label">PROJECTS COMPLETED</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 4: Projects - Mission Archives -->
+        <section id="projects" class="projects-section mission-archives">
+            <div class="section-header">
+                <div class="section-title">
+                    <h2 class="title-glitch" data-text="MISSION_ARCHIVES">MISSION_ARCHIVES</h2>
+                    <div class="title-sub">// CLASSIFIED_PROJECTS_DATABASE</div>
+                </div>
+                <div class="section-ornament">
+                    <div class="archive-ornament"></div>
+                </div>
+            </div>
+            
+            <div class="projects-filter">
+                <div class="filter-title">FILTER_BY_CATEGORY:</div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">ALL_MISSIONS</button>
+                    <button class="filter-btn" data-filter="java">JAVA_OPERATIONS</button>
+                    <button class="filter-btn" data-filter="web">WEB_DEVELOPMENT</button>
+                    <button class="filter-btn" data-filter="mobile">MOBILE_OPS</button>
+                    <button class="filter-btn" data-filter="fullstack">FULL_STACK</button>
+                    <button class="filter-btn" data-filter="hack">HACKER_TOOLS</button>
+                </div>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1: Microservices Architecture -->
+                <div class="project-card" data-category="java fullstack">
+                    <div class="project-header">
+                        <div class="project-badge">CLASSIFIED</div>
+                        <div class="project-priority">
+                            <span class="priority-dot high"></span>
+                            <span>HIGH_PRIORITY</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="project-title">MICROSERVICES ARCHITECTURE</h3>
+                        <div class="project-subtitle">SPRING_BOOT | DOCKER | KUBERNETES</div>
+                        <p class="project-desc">
+                            Built scalable microservices system improving efficiency by 40%. 
+                            Implemented service discovery, API gateway, and circuit breakers.
+                        </p>
+                        <div class="project-stats">
+                            <div class="project-stat">
+                                <span class="stat-label">PERFORMANCE:</span>
+                                <span class="stat-value">+40%</span>
+                            </div>
+                            <div class="project-stat">
+                                <span class="stat-label">UPTIME:</span>
+                                <span class="stat-value">99.9%</span>
+                            </div>
+                            <div class="project-stat">
+                                <span class="stat-label">SCALE:</span>
+                                <span class="stat-value">10K+ RPS</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">RabbitMQ</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">
+                            <span>VIEW_DETAILS</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="#" class="project-link">
+                            <span>GITHUB</span>
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+                
+                <!-- Project 2: Full Stack Application -->
+                <div class="project-card" data-category="web fullstack">
+                    <div class="project-header">
+                        <div class="project-badge">ACTIVE</div>
+                        <div class="project-priority">
+                            <span class="priority-dot medium"></span>
+                            <span>MEDIUM_PRIORITY</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3 class="project-title">FULL STACK PLATFORM</h3>
+                        <div class="project-subtitle">REACT | SPRING_BOOT | POSTGRESQL</div>
+                        <p class="project-desc">
+                            End-to-end application with React frontend and Spring Boot backend. 
+                            Increased user engagement by 25% through intuitive UI/UX.
+                        </p>
+                        <div class="project-stats">
+                            <div class="project-stat">
+                                <span class="stat-label">ENGAGEMENT:</span>
+                                <span class="stat-value">+25%</span>
+                            </div>
+                            <div class="project-stat">
+                                <span class="stat-label">LOAD_TIME:</span>
+                                <span class="stat-value">1.2s</span>
+                            </div>
+                            <div class="project-stat">
+                                <span class="stat-label">USERS:</span>
+                                <span class="stat-value">5K+</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">
+                            <span>VIEW_DETAILS</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="#" class="project-link">
+                            <span>LIVE_DEMO</span>
+                            <i class="fas fa-play"></i>
+                        </a>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+                
+                <!-- Project 3: Database Optimization -->
+                <div class="project-card" data-category="java">
+                    <div class="project-header">
+                        <div class="project-badge">COMPLETED</div>
+                        <div class="project-priority">
+                            <span class="priority-dot low"></span>
+                            <span>LOW_PRIORITY</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="project-title">DATABASE OPTIMIZATION</h3>
+                        <div class="project-subtitle">POSTGRESQL | REDIS | QUERY_OPTIMIZATION</div>
+                        <p class="project-desc">
+                            Optimized PostgreSQL queries and implemented caching strategy. 
+                            Reduced response time by 60% and improved throughput.
+                        </p>
+                        <div class="project-stats">
+                            <div class="project-stat">
+                                <span class="stat-label">RESPONSE_TIME:</span>
+                                <span class="stat-value">-60%</span>
+                            </div>
+                            <div class="project-stat">
+                                <span class="stat-label">THROUGHPUT:</span>
+                                <span class="stat-value">+300%</span>
+                            </div>
+                            <div class="project-stat">
+                                <span class="stat-label">CACHE_HIT:</span>
+                                <span class="stat-value">95%</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Query Optimization</span>
+                            <span class="tech-tag">Indexing</span>
+                            <span class="tech-tag">Partitioning</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">
+                            <span>CASE_STUDY</span>
+                            <i class="fas fa-file-alt"></i>
+                        </a>
+                        <a href="#" class="project-link">
+                            <span>GITHUB</span>
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+                
+                <!-- Project 4: Hacker Security Tool -->
+                <div class="project-card" data-category="hack">
+                    <div class="project-header">
+                        <div class="project-badge">TOP_SECRET</div>
+                        <div class="project-priority">
+                            <span class="priority-dot critical"></span>
+                            <span>CRITICAL</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="project-title">SECURITY_SCANNER</h3>
+                        <div class="project-subtitle">PYTHON | SECURITY | PEN_TESTING</div>
+                        <p class="project-desc">
+                            Custom security scanning tool for vulnerability assessment. 
+                            Identifies security flaws and provides remediation strategies.
+                        </p>
+                        <div class="project-stats">
+                            <div class="project-stat">
+                                <span class="stat-label">VULNERABILITIES:</span>
+                                <span class="stat-value">150+</span>
+                            </div>
+                            <div class="project-stat">
+                                <span class="stat-label">ACCURACY:</span>
+                                <span class="stat-value">98%</span>
+                            </div>
+                            <div class="project-stat">
+                                <span class="stat-label">SCAN_TIME:</span>
+                                <span class="stat-value">2min</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Security</span>
+                            <span class="tech-tag">Networking</span>
+                            <span class="tech-tag">Encryption</span>
+                            <span class="tech-tag">APIs</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">
+                            <span>DOCUMENTATION</span>
+                            <i class="fas fa-book"></i>
+                        </a>
+                        <a href="#" class="project-link disabled">
+                            <span>SOURCE_CODE</span>
+                            <i class="fas fa-lock"></i>
+                        </a>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+                
+                <!-- Project 5: Mobile Application -->
+                <div class="project-card" data-category="mobile">
+                    <div class="project-header">
+                        <div class="project-badge">IN_DEVELOPMENT</div>
+                        <div class="project-priority">
+                            <span class="priority-dot medium"></span>
+                            <span>MEDIUM_PRIORITY</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="project-title">MOBILE_APP</h3>
+                        <div class="project-subtitle">REACT_NATIVE | FIREBASE | MOBILE</div>
+                        <p class="project-desc">
+                            Cross-platform mobile application with real-time features. 
+                            Offline capabilities and push notifications for user engagement.
+                        </p>
+                        <div class="project-stats">
+                            <div class="project-stat">
+                                <span class="stat-label">PLATFORMS:</span>
+                                <span class="stat-value">iOS/Android</span>
+                            </div>
+                            <div class="project-stat">
+                                <span class="stat-label">RATING:</span>
+                                <span class="stat-value">4.8★</span>
+                            </div>
+                            <div class="project-stat">
+                                <span class="stat-label">DOWNLOADS:</span>
+                                <span class="stat-value">10K+</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Redux</span>
+                            <span class="tech-tag">APIs</span>
+                            <span class="tech-tag">Push Notifications</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">
+                            <span>APP_STORE</span>
+                            <i class="fab fa-apple"></i>
+                        </a>
+                        <a href="#" class="project-link">
+                            <span>PLAY_STORE</span>
+                            <i class="fab fa-google-play"></i>
+                        </a>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+                
+                <!-- Project 6: AI/ML Integration -->
+                <div class="project-card" data-category="java">
+                    <div class="project-header">
+                        <div class="project-badge">RESEARCH</div>
+                        <div class="project-priority">
+                            <span class="priority-dot high"></span>
+                            <span>HIGH_PRIORITY</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="project-title">AI_INTEGRATION</h3>
+                        <div class="project-subtitle">PYTHON | TENSORFLOW | JAVA_INTEGRATION</div>
+                        <p class="project-desc">
+                            Integrated machine learning models with Java applications. 
+                            Real-time prediction engine with 95% accuracy rate.
+                        </p>
+                        <div class="project-stats">
+                            <div class="project-stat">
+                                <span class="stat-label">ACCURACY:</span>
+                                <span class="stat-value">95%</span>
+                            </div>
+                            <div class="project-stat">
+                                <span class="stat-label">PREDICTION_TIME:</span>
+                                <span class="stat-value">50ms</span>
+                            </div>
+                            <div class="project-stat">
+                                <span class="stat-label">MODELS:</span>
+                                <span class="stat-value">10+</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">REST APIs</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">
+                            <span>RESEARCH_PAPER</span>
+                            <i class="fas fa-file-pdf"></i>
+                        </a>
+                        <a href="#" class="project-link">
+                            <span>DEMO</span>
+                            <i class="fas fa-video"></i>
+                        </a>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+            </div>
+            
+            <div class="projects-archive">
+                <div class="archive-header">
+                    <h3 class="archive-title">COMPLETE_PROJECT_ARCHIVE</h3>
+                    <div class="archive-count">
+                        <span class="count-number">50+</span>
+                        <span class="count-text">MISSIONS_COMPLETED</span>
+                    </div>
+                </div>
+                <div class="archive-list">
+                    <div class="archive-item">
+                        <span class="item-date">2024-Q4</span>
+                        <span class="item-name">E-COMMERCE_PLATFORM</span>
+                        <span class="item-status completed">COMPLETED</span>
+                    </div>
+                    <div class="archive-item">
+                        <span class="item-date">2024-Q3</span>
+                        <span class="item-name">CRM_SYSTEM</span>
+                        <span class="item-status completed">COMPLETED</span>
+                    </div>
+                    <div class="archive-item">
+                        <span class="item-date">2024-Q2</span>
+                        <span class="item-name">INVENTORY_MANAGEMENT</span>
+                        <span class="item-status completed">COMPLETED</span>
+                    </div>
+                    <div class="archive-item">
+                        <span class="item-date">2024-Q1</span>
+                        <span class="item-name">PAYMENT_GATEWAY</span>
+                        <span class="item-status completed">COMPLETED</span>
+                    </div>
+                    <!-- 46 more archive items would be here in production -->
+                </div>
+                <button class="archive-toggle">
+                    <span>VIEW_ALL_ARCHIVES</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+        </section>
+        
+        <!-- Section 5: Experience - Gotham Timeline -->
+        <section id="experience" class="experience-section gotham-timeline">
+            <div class="section-header">
+                <div class="section-title">
+                    <h2 class="title-glitch" data-text="GOTHAM_TIMELINE">GOTHAM_TIMELINE</h2>
+                    <div class="title-sub">// CAREER_MILESTONES_&_BATTLES</div>
+                </div>
+                <div class="section-ornament">
+                    <div class="timeline-ornament"></div>
+                </div>
+            </div>
+            
+            <div class="timeline-container">
+                <div class="timeline-track">
+                    <div class="track-line"></div>
+                    <div class="track-bats">
+                        <div class="bat-fly"></div>
+                        <div class="bat-fly"></div>
+                        <div class="bat-fly"></div>
+                    </div>
+                </div>
+                
+                <div class="timeline-content">
+                    <!-- Current Position -->
+                    <div class="timeline-item current">
+                        <div class="timeline-marker">
+                            <div class="marker-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="marker-glow"></div>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <div class="card-date">10/2024 - PRESENT</div>
+                                <div class="card-badge">ACTIVE</div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">CUSTOMER SUPPORT SPECIALIST</h3>
+                                <div class="card-subtitle">GUIDE HOUSE IND</div>
+                                <div class="card-desc">
+                                    Managing complete AR cycle, coordinating with insurers for settlements, 
+                                    and ensuring compliance in revenue recovery. Developing automation tools 
+                                    to streamline processes.
+                                </div>
+                                <div class="card-tech">
+                                    <span class="tech-pill">AUTOMATION</span>
+                                    <span class="tech-pill">COMPLIANCE</span>
+                                    <span class="tech-pill">PROCESS_OPTIMIZATION</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-stats">
+                                    <div class="stat">
+                                        <span class="stat-label">PROCESS_EFFICIENCY:</span>
+                                        <span class="stat-value">+35%</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-label">ERROR_RATE:</span>
+                                        <span class="stat-value">-60%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Previous Position -->
+                    <div class="timeline-item past">
+                        <div class="timeline-marker">
+                            <div class="marker-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <div class="card-date">07/2022 - 05/2024</div>
+                                <div class="card-badge">COMPLETED</div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">AR CALLER</h3>
+                                <div class="card-subtitle">OMEGA HEALTHCARE</div>
+                                <div class="card-desc">
+                                    Performed accounts receivable follow-ups with US healthcare providers, 
+                                    driving claim resolution and reducing denials. Developed tracking systems 
+                                    for better accountability.
+                                </div>
+                                <div class="card-tech">
+                                    <span class="tech-pill">HEALTHCARE</span>
+                                    <span class="tech-pill">DATA_ANALYSIS</span>
+                                    <span class="tech-pill">COMMUNICATION</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-stats">
+                                    <div class="stat">
+                                        <span class="stat-label">CLAIM_RESOLUTION:</span>
+                                        <span class="stat-value">+40%</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-label">DENIAL_RATE:</span>
+                                        <span class="stat-value">-25%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- First Position -->
+                    <div class="timeline-item past">
+                        <div class="timeline-marker">
+                            <div class="marker-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <div class="card-date">2021 - 2022</div>
+                                <div class="card-badge">COMPLETED</div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">CUSTOMER SUPPORT</h3>
+                                <div class="card-subtitle">SUTHERLAND GLOBAL</div>
+                                <div class="card-desc">
+                                    Handled inbound/outbound customer calls, resolved queries efficiently, 
+                                    and ensured high customer satisfaction. Developed problem-solving skills 
+                                    and technical troubleshooting abilities.
+                                </div>
+                                <div class="card-tech">
+                                    <span class="tech-pill">CUSTOMER_SERVICE</span>
+                                    <span class="tech-pill">TROUBLESHOOTING</span>
+                                    <span class="tech-pill">PROBLEM_SOLVING</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-stats">
+                                    <div class="stat">
+                                        <span class="stat-label">SATISFACTION:</span>
+                                        <span class="stat-value">95%</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-label">RESOLUTION_TIME:</span>
+                                        <span class="stat-value">-30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Education -->
+                    <div class="timeline-item education">
+                        <div class="timeline-marker">
+                            <div class="marker-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <div class="card-date">2023 - 2025</div>
+                                <div class="card-badge">IN_PROGRESS</div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">MASTER OF COMPUTER APPLICATIONS</h3>
+                                <div class="card-subtitle">JAVA UNIVERSITY</div>
+                                <div class="card-desc">
+                                    Specializing in Advanced Java Architectures, Cyber Security Protocols, 
+                                    and Distributed Systems. Current GPA: 9.1/10. Research focus on 
+                                    secure microservices communication.
+                                </div>
+                                <div class="card-tech">
+                                    <span class="tech-pill">JAVA</span>
+                                    <span class="tech-pill">CYBER_SECURITY</span>
+                                    <span class="tech-pill">DISTRIBUTED_SYSTEMS</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-stats">
+                                    <div class="stat">
+                                        <span class="stat-label">GPA:</span>
+                                        <span class="stat-value">9.1/10</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-label">PROJECTS:</span>
+                                        <span class="stat-value">15+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Earlier Education -->
+                    <div class="timeline-item education">
+                        <div class="timeline-marker">
+                            <div class="marker-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <div class="card-date">2018 - 2021</div>
+                                <div class="card-badge">COMPLETED</div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">BACHELOR OF COMMERCE</h3>
+                                <div class="card-subtitle">SRM UNIVERSITY</div>
+                                <div class="card-desc">
+                                    Combined business acumen with technical prowess. Developed analytical 
+                                    skills and understanding of business processes. GPA: 8.8/10.
+                                </div>
+                                <div class="card-tech">
+                                    <span class="tech-pill">BUSINESS</span>
+                                    <span class="tech-pill">ANALYTICS</span>
+                                    <span class="tech-pill">STRATEGY</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-stats">
+                                    <div class="stat">
+                                        <span class="stat-label">GPA:</span>
+                                        <span class="stat-value">8.8/10</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-label">SPECIALIZATIONS:</span>
+                                        <span class="stat-value">3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-stats">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value">3+</div>
+                            <div class="stat-label">YEARS EXPERIENCE</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value">50+</div>
+                            <div class="stat-label">PROJECTS COMPLETED</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value">100K+</div>
+                            <div class="stat-label">LINES OF CODE</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value">20+</div>
+                            <div class="stat-label">TEAMS COLLABORATED</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 6: Contact - Bat Signal -->
+        <section id="contact" class="contact-section bat-signal-section">
+            <div class="section-header">
+                <div class="section-title">
+                    <h2 class="title-glitch" data-text="BAT_SIGNAL">BAT_SIGNAL</h2>
+                    <div class="title-sub">// ACTIVATE_EMERGENCY_CONTACT_PROTOCOL</div>
+                </div>
+                <div class="section-ornament">
+                    <div class="signal-ornament"></div>
+                </div>
+            </div>
+            
+            <div class="contact-container">
+                <div class="signal-container">
+                    <div class="signal-tower">
+                        <div class="tower-base"></div>
+                        <div class="tower-body"></div>
+                        <div class="signal-light active">
+                            <div class="light-beam"></div>
+                            <div class="light-glow"></div>
+                        </div>
+                    </div>
+                    <div class="signal-message">
+                        <div class="message-text">GOTHAM_NEEDS_YOUR_SKILLS</div>
+                        <div class="message-subtext">SEND_THE_SIGNAL_TO_CONNECT</div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <h3 class="form-title">ENCRYPTED_MESSAGE_TRANSMISSION</h3>
+                        <div class="form-security">
+                            <span class="security-status secure">SECURE_CONNECTION</span>
+                            <span class="security-icon"><i class="fas fa-lock"></i></span>
+                        </div>
+                    </div>
+                    
+                    <form id="encrypted-contact-form" class="cyber-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="contact-name" class="form-label">
+                                    <span class="label-text">IDENTIFICATION:</span>
+                                    <span class="label-required">*</span>
+                                </label>
+                                <div class="input-container">
+                                    <input type="text" id="contact-name" name="name" required 
+                                           class="cyber-input" placeholder="ENTER_YOUR_NAME">
+                                    <div class="input-glow"></div>
+                                    <div class="input-icon">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-email" class="form-label">
+                                    <span class="label-text">FREQUENCY:</span>
+                                    <span class="label-required">*</span>
+                                </label>
+                                <div class="input-container">
+                                    <input type="email" id="contact-email" name="email" required 
+                                           class="cyber-input" placeholder="TRANSMISSION@FREQUENCY.COM">
+                                    <div class="input-glow"></div>
+                                    <div class="input-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-subject" class="form-label">
+                                    <span class="label-text">MISSION_CODE:</span>
+                                </label>
+                                <div class="input-container">
+                                    <input type="text" id="contact-subject" name="subject" 
+                                           class="cyber-input" placeholder="CLASSIFIED_MISSION_TITLE">
+                                    <div class="input-glow"></div>
+                                    <div class="input-icon">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-urgency" class="form-label">
+                                    <span class="label-text">URGENCY_LEVEL:</span>
+                                </label>
+                                <div class="input-container">
+                                    <select id="contact-urgency" name="urgency" class="cyber-select">
+                                        <option value="normal">NORMAL_PRIORITY</option>
+                                        <option value="high">HIGH_PRIORITY</option>
+                                        <option value="critical">CRITICAL_EMERGENCY</option>
+                                        <option value="classified">TOP_SECRET</option>
+                                    </select>
+                                    <div class="select-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group full-width">
+                                <label for="contact-message" class="form-label">
+                                    <span class="label-text">ENCRYPTED_MESSAGE:</span>
+                                    <span class="label-required">*</span>
+                                </label>
+                                <div class="input-container">
+                                    <textarea id="contact-message" name="message" required 
+                                              class="cyber-textarea" rows="6" 
+                                              placeholder="ENTER_ENCRYPTED_MESSAGE_HERE..."></textarea>
+                                    <div class="textarea-glow"></div>
+                                    <div class="textarea-icon">
+                                        <i class="fas fa-comment-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-footer">
+                            <div class="form-actions">
+                                <button type="submit" class="cyber-btn primary-btn">
+                                    <span class="btn-inner">
+                                        <span class="btn-text">TRANSMIT_MESSAGE</span>
+                                        <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                                    </span>
+                                    <span class="btn-glow"></span>
+                                </button>
+                                <button type="reset" class="cyber-btn secondary-btn">
+                                    <span class="btn-inner">
+                                        <span class="btn-text">CLEAR_TRANSMISSION</span>
+                                        <span class="btn-icon"><i class="fas fa-eraser"></i></span>
+                                    </span>
+                                </button>
+                            </div>
+                            
+                            <div class="form-encryption">
+                                <div class="encryption-status">
+                                    <span class="encryption-text">ENCRYPTION_LEVEL:</span>
+                                    <span class="encryption-level">AES-256</span>
+                                </div>
+                                <div class="encryption-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 100%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="contact-info-container">
+                    <div class="info-card">
+                        <div class="card-header">
+                            <h3 class="card-title">DIRECT_COMMUNICATION_CHANNELS</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="contact-channel">
+                                <div class="channel-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="channel-info">
+                                    <h4 class="channel-name">ENCRYPTED_MAIL</h4>
+                                    <a href="mailto:mr.blackerwolf@gmail.com" class="channel-value">
+                                        mr.blackerwolf@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-channel">
+                                <div class="channel-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="channel-info">
+                                    <h4 class="channel-name">SECURE_LINE</h4>
+                                    <a href="tel:+918610778315" class="channel-value">
+                                        +91 8610778315
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-channel">
+                                <div class="channel-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="channel-info">
+                                    <h4 class="channel-name">CODE_REPOSITORY</h4>
+                                    <a href="https://github.com/Deena-Palani" target="_blank" class="channel-value">
+                                        github.com/Deena-Palani
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-channel">
+                                <div class="channel-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="channel-info">
+                                    <h4 class="channel-name">BASE_LOCATION</h4>
+                                    <div class="channel-value">
+                                        Saligramam, Chennai - 600093
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                            <span class="link-tooltip">GITHUB_PROFILE</span>
+                        </a>
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                            <span class="link-tooltip">LINKEDIN_PROFILE</span>
+                        </a>
+                        <a href="#" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                            <span class="link-tooltip">TWITTER_FEED</span>
+                        </a>
+                        <a href="#" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span class="link-tooltip">INSTAGRAM</span>
+                        </a>
+                        <a href="#" class="social-link" title="Stack Overflow">
+                            <i class="fab fa-stack-overflow"></i>
+                            <span class="link-tooltip">STACK_OVERFLOW</span>
+                        </a>
+                        <a href="#" class="social-link" title="HackerRank">
+                            <i class="fab fa-hackerrank"></i>
+                            <span class="link-tooltip">HACKERRANK</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-response">
+                <div class="response-terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-title">TRANSMISSION_RESPONSE</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="prompt">signal@batcomputer:~$</span>
+                            <span class="command">status --transmission</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="output">TRANSMISSION_READY: AWAITING_INPUT</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="prompt">signal@batcomputer:~$</span>
+                            <span class="command cursor-blink">█</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Easter Egg: Hidden Terminal -->
+        <div class="easter-terminal hidden">
+            <div class="terminal-container">
+                <div class="terminal-header">
+                    <div class="terminal-title">HIDDEN_TERMINAL // EASTER_EGG</div>
+                    <button class="terminal-close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-output">
+                        <div class="output-line">INITIALIZING HIDDEN PROTOCOLS...</div>
+                        <div class="output-line">ACCESSING CLASSIFIED BATMAN FILES...</div>
+                        <div class="output-line">DECRYPTING EASTER EGG CONTENT...</div>
+                        <div class="output-line"> </div>
+                        <div class="output-line ascii-art">
+    ██████╗  █████╗ ████████╗███╗   ███╗ █████╗ ███╗   ██╗
+    ██╔══██╗██╔══██╗╚══██╔══╝████╗ ████║██╔══██╗████╗  ██║
+    ██████╔╝███████║   ██║   ██╔████╔██║███████║██╔██╗ ██║
+    ██╔══██╗██╔══██║   ██║   ██║╚██╔╝██║██╔══██║██║╚██╗██║
+    ██████╔╝██║  ██║   ██║   ██║ ╚═╝ ██║██║  ██║██║ ╚████║
+    ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
+                        </div>
+                        <div class="output-line"> </div>
+                        <div class="output-line">BATMAN QUOTES DATABASE:</div>
+                        <div class="output-line">> "It's not who I am underneath, but what I do that defines me."</div>
+                        <div class="output-line">> "Why do we fall? So we can learn to pick ourselves up."</div>
+                        <div class="output-line">> "The night is darkest just before the dawn."</div>
+                        <div class="output-line">> "A hero can be anyone, even a developer writing code."</div>
+                        <div class="output-line"> </div>
+                        <div class="output-line">HACKER COMMANDS AVAILABLE:</div>
+                        <div class="output-line">• help - Show available commands</div>
+                        <div class="output-line">• matrix - Enable Matrix rain</div>
+                        <div class="output-line">• bats - Release bats animation</div>
+                        <div class="output-line">• glitch - Activate glitch effect</div>
+                        <div class="output-line">• decrypt - Decrypt hidden message</div>
+                        <div class="output-line"> </div>
+                        <div class="output-line">root@easter-egg:~$ <span class="cursor-blink">█</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer - Gotham Nights -->
+    <footer class="cyber-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-symbol">
+                            <i class="fas fa-bat"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">DARK_KNIGHT_DEV</span>
+                            <span class="logo-sub">GOTHAM'S DIGITAL PROTECTOR</span>
+                        </div>
+                    </div>
+                    <p class="footer-desc">
+                        When the city sleeps, the code awakens. Building digital fortresses 
+                        with the precision of Batman and the creativity of a master hacker.
+                    </p>
+                    <div class="footer-encryption">
+                        <span class="encryption-status">
+                            <i class="fas fa-shield-alt"></i>
+                            SITE_ENCRYPTION: AES-256
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">NAVIGATION_MAP</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">HOME.SYS</a></li>
+                        <li><a href="#about">ABOUT.DAT</a></li>
+                        <li><a href="#skills">SKILLS.EXE</a></li>
+                        <li><a href="#projects">PROJECTS.DIR</a></li>
+                        <li><a href="#experience">TIMELINE.LOG</a></li>
+                        <li><a href="#contact">CONTACT.COM</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">TECH_ARSENAL</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">JAVA</span>
+                        <span class="tech-tag">SPRING_BOOT</span>
+                        <span class="tech-tag">REACT</span>
+                        <span class="tech-tag">POSTGRESQL</span>
+                        <span class="tech-tag">DOCKER</span>
+                        <span class="tech-tag">MICROSERVICES</span>
+                        <span class="tech-tag">REST_API</span>
+                        <span class="tech-tag">GIT</span>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">BAT_SIGNAL</h3>
+                    <div class="signal-status">
+                        <div class="status-indicator active"></div>
+                        <span class="status-text">SIGNAL_ACTIVE</span>
+                    </div>
+                    <p class="signal-message">
+                        Ready to answer the call. Connect for missions, collaborations, 
+                        or digital crime fighting.
+                    </p>
+                    <button class="footer-btn" id="emergency-contact">
+                        <i class="fas fa-bolt"></i>
+                        EMERGENCY_CONTACT
+                    </button>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2026 DEENA PALANI | JAVA FULL STACK DEVELOPER | GOTHAM'S DIGITAL KNIGHT
+                </div>
+                <div class="footer-notes">
+                    <span class="note">SITE_VERSION: 2.0.1</span>
+                    <span class="note">LAST_UPDATE: 2026-02-08</span>
+                    <span class="note">STATUS: OPERATIONAL</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-matrix">
+            <div class="matrix-line"></div>
+            <div class="matrix-line"></div>
+            <div class="matrix-line"></div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+        <span class="btn-text">BACK_TO_SURFACE</span>
+    </button>
+    
+    <!-- Audio Elements -->
+    <audio id="hover-sound" preload="auto">
+        <source src="data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4Ljc2LjEwMAAAAAAAAAAAAAAA//tQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAACcAICAgIDAwMDAwQEBAQFBQUFBgYGBgcHBwcICAgICQkJCQoKCgoLCwsLDAwMDA0NDQ0ODg4ODw8PDxAQEBAREREREhISEhMTExMUFBQUFRUVFRYWFhYXFxcXGBgYGBkZGRkaGhobGxsbHBwcHB0dHR0eHh4eHx8fHyAgICAhISEhIiIiIiMjIyMkJCQkJSUlJSYmJiYnJycnKCgoKCkpKSkqKioqKysrKywsLCwtLS0tLi4uLi8vLy8wMDAwMTExMTIyMjIzMzMzNDQ0NDU1NTU2NjY2Nzc3Nzg4ODg5OTk5Ojo6Ojs7Ozs8PDw8PT09PT4+Pj4/Pz8/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//sQZAAP8AAAaQAAAAgAAA0gAAABAAABpAAAACAAADSAAAAETEFNRTMuMTAwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq" type="audio/mpeg">
+    </audio>
+    
+    <audio id="click-sound" preload="auto">
+        <source src="data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4Ljc2LjEwMAAAAAAAAAAAAAAA//tQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAACcAICAgIDAwMDAwQEBAQFBQUFBgYGBgcHBwcICAgICQkJCQoKCgoLCwsLDAwMDA0NDQ0ODg4ODw8PDxAQEBAREREREhISEhMTExMUFBQUFRUVFRYWFhYXFxcXGBgYGBkZGRkaGhobGxsbHBwcHB0dHR0eHh4eHx8fHyAgICAhISEhIiIiIiMjIyMkJCQkJSUlJSYmJiYnJycnKCgoKCkpKSkqKioqKysrKywsLCwtLS0tLi4uLi8vLy8wMDAwMTExMTIyMjIzMzMzNDQ0NDU1NTU2NjY2Nzc3Nzg4ODg5OTk5Ojo6Ojs7Ozs8PDw8PT09PT4+Pj4/Pz8/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//sQZAAP8AAAaQAAAAgAAA0gAAABAAABpAAAACAAADSAAAAETEFNRTMuMTAwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq" type="audio/mpeg">
+    </audio>
+    
+    <!-- JavaScript Files -->
+    <script src="script.js"></script>
+    <script src="animations.js"></script>
+    <script src="matrix-rain.js"></script>
+    <script src="particles-config.js"></script>
+    <script src="gsap-animations.js"></script>
+    <script src="terminal-effects.js"></script>
+    <script src="neon-effects.js"></script>
+    <script src="hacker-animations.js"></script>
+    <script src="batman-elements.js"></script>
+    <script src="cyber-interactions.js"></script>
+    <script src="scroll-animations.js"></script>
+    <script src="easter-eggs.js"></script>
+    <script src="sound-system.js"></script>
+    <script src="theme-manager.js"></script>
+    <script src="form-handler.js"></script>
+    
+    <!-- Three.js for 3D Effects -->
+    <script>
+        // Initialize loading animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const progressFill = document.querySelector('.progress-fill');
+            let progress = 0;
+            const interval = setInterval(() => {
+                progress += Math.random() * 10;
+                if (progress >= 100) {
+                    progress = 100;
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        document.getElementById('loading-screen').style.opacity = '0';
+                        setTimeout(() => {
+                            document.getElementById('loading-screen').style.display = 'none';
+                            // Initialize main animations
+                            if (typeof initAnimations === 'function') initAnimations();
+                        }, 500);
+                    }, 500);
+                }
+                progressFill.style.width = progress + '%';
+            }, 50);
+        });
+    </script>
+</body>
+</html>
